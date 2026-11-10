@@ -1,0 +1,8 @@
+command: ["streamlit", "run", "app.py", "--server.headless", "true"]
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
+  - name: SEND_JOB_ID
+    value: "<job id of the Revenue Demo - Team Send job>"
+  - name: REV_SCHEMA
+    value: "main.revenue_demo"
